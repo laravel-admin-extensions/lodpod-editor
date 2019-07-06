@@ -1,0 +1,33 @@
+{
+    "name": "laravel-admin-ext/lodpod-editor",
+    "description": "Virtual print template editor",
+    "type": "library",
+    "keywords": ["laravel-admin", "extension"],
+    "homepage": "https://github.com/laravel-admin-ext/lodpod-editor",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "谢文锋",
+            "email": "xwengf@126.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "encore/laravel-admin": "~1.6"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Encore\\LodpodEditor\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Encore\\LodpodEditor\\LodpodEditorServiceProvider"
+            ]
+        }
+    }
+}
