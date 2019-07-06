@@ -14,30 +14,6 @@ class LodpodEditorTemplateController extends AdminController
 {
 	protected $title = 'Lodpod-editor 打印模板';
 
-	public function custom($id,Content $content){
-		$form = new Form(new LodpodEditorTemplate);
-
-		$row = LodpodEditorTemplate::find($id)->toArray();
-
-        $form->lodpod_editor('data', __('Data'))
-        	->config($row)
-        	->fields([
-	        	['id'=>'sender', 'text'=>trans('admin.lodpod_editor.sender')],
-	        	['id'=>'sender_mobile', 'text'=>trans('admin.lodpod_editor.sender_mobile')],
-	        	['id'=>'sender_address', 'text'=>trans('admin.lodpod_editor.sender_address')],
-	        	['id'=>'sender_company', 'text'=>trans('admin.lodpod_editor.sender_company')],
-	        	['id'=>'sender_zip_code', 'text'=>trans('admin.lodpod_editor.sender_zip_code')],
-	        ]);
-		$form->setAction('/admin/lodpodeditortemplates/'.$id.'/savecustom');
-		return $content
-            ->title($this->title())
-            ->description(trans('admin.lodpod_editor.custom'))
-            ->body($form->edit($id));
-	}
-
-	public function saveCustom($id){
-	}
-
     public function grid()
     {
         $grid = new Grid(new LodpodEditorTemplate);
