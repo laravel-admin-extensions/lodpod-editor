@@ -3,7 +3,7 @@
     "description": "Virtual print template editor",
     "type": "library",
     "keywords": ["laravel-admin", "extension"],
-    "homepage": "https://github.com/laravel-admin-ext/lodpod-editor",
+    "homepage": "https://github.com/williamtse/lodpod-editor",
     "license": "MIT",
     "authors": [
         {
