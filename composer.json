@@ -1,5 +1,5 @@
 {
-    "name": "laravel-admin-ext/lodpod-editor",
+    "name": "lodpod-editor",
     "description": "Virtual print template editor",
     "type": "library",
     "keywords": ["laravel-admin", "extension"],
