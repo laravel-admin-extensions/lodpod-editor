@@ -6,7 +6,7 @@ Lodpod-Editor
 ## Installation
 
 ```
-$ composer require laravel-admin-ext/lodpod-editor
+$ composer require xiewenfeng/lodpod-editor
 
 $ php artisan admin:import lodpod-editor
 ```
